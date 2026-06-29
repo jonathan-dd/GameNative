@@ -233,6 +233,7 @@ fun BootingSplash(
                         color = PluviaTheme.colors.accentCyan.copy(alpha = glowAlpha * 0.6f),
                         modifier = Modifier
                             .blur(20.dp)
+                            .padding(20.dp)
                             .alpha(glowAlpha),
                     )
 
@@ -255,7 +256,7 @@ fun BootingSplash(
                     )
                 }
 
-                Spacer(modifier = Modifier.height(48.dp))
+                Spacer(modifier = Modifier.height(28.dp))
 
                 ProgressBar(
                     progress = progress,
@@ -287,6 +288,7 @@ fun BootingSplash(
                     textAlign = TextAlign.Center,
                 )
 
+                Spacer(modifier = Modifier.height(15.dp))
                 Spacer(modifier = Modifier.weight(0.3f))
 
                 // Tips section
